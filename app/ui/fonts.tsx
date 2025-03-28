@@ -1,11 +1,12 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import { Inter, Lusitana } from "next/font/google";
 
-export const geistSans = Geist({
-  variable: "--font-geist-sans",
+export const inter = Inter({
   subsets: ["latin"],
+  display: "swap",
+  fallback: ["system-ui", "arial"],
 });
 
-export const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+export const lusitana = Lusitana({
+  weight: ["400", "700"],
   subsets: ["latin"],
 });
